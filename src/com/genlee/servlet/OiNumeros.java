@@ -16,7 +16,7 @@ public class OiNumeros extends HttpServlet {
 	//	super.service(request, response);
 		
 		PrintWriter out = response.getWriter();
-		out.println("<htmml>");
+		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>Primeira Servlet</title");
 		out.println("</head>");
