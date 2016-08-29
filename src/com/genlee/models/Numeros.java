@@ -13,6 +13,14 @@ public class Numeros {
 	public void setNumeroInteiro(int numeroInteiro) {
 		this.numeroInteiro = numeroInteiro;
 	}
+
+	public String getNumeroRomano() {
+		return numeroRomano;
+	}
+
+	public void setNumeroRomano(String numeroRomano) {
+		this.numeroRomano = numeroRomano;
+	}
 	
 	
 
