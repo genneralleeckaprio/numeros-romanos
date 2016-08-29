@@ -2,6 +2,16 @@ package com.genlee.models;
 
 public class Numeros {
 	
+	private Long id;
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	private int numeroInteiro;
 	
 	private String numeroRomano;
