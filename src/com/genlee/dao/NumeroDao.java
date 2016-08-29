@@ -53,4 +53,15 @@ public class NumeroDao {
 		throw new RuntimeException(e);
 	}
 	}
+	
+	public void remove (Numeros numeros) {
+		try{
+			PreparedStatement stmt = connection.prepareStatement("delete from numerointeiro where id=?");
+			stmt.setLong(1, numeros.getId());
+			stmt.execute();
+			stmt.close();
+		}catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }
