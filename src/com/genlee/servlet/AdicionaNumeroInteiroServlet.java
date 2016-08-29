@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.genlee.dao.NumeroDao;
 import com.genlee.models.Numeros;
 
 @WebServlet("/adicionaNumeroInteiro")
@@ -25,7 +26,14 @@ public class AdicionaNumeroInteiroServlet extends HttpServlet {
 		
 		numeros.setNumeroInteiro(numero);
 		
+		NumeroDao dao = new NumeroDao();
+		dao.adiciona(numeros);
+		
+		out.println("<html>");
+		out.println("<body>");
+		out.println("Numero " + numeros.getNumeroInteiro() + "adicionado com sucesso");
+		out.println("</body>");
+		out.println("</html>");
 	}
-	
 	
 }

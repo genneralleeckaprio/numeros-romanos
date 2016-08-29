@@ -8,7 +8,7 @@ public class TesteInsere {
 	public static void main(String[] args) {
 		
 		Numeros numeros = new Numeros();
-		numeros.setNumeroInteiro(57);
+		numeros.setNumeroInteiro(101);
 		
 		NumeroDao dao = new NumeroDao();
 		dao.adiciona(numeros);
